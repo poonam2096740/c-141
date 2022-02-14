@@ -40,7 +40,7 @@ def unliked_movie():
     }), 201
 
 @app.route("/did-not-watch", methods=["POST"])
-def did_not_watch():
+def did_not_watch_route():
     movie = all_movies[0]
     all_movies = all_movies[1:]
     did_not_watch.append(movie)
